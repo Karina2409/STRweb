@@ -2,7 +2,16 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  margin: 30px;
+}
+
 img {
   height: 300px;
-  border: solid 2px black;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+p {
+  text-align: justify;
 }
