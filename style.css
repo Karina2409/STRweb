@@ -1,0 +1,16 @@
+.work{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.labi{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+img{
+  width: 150px;
+}
