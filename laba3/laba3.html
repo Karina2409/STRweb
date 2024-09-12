@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./laba3.css">
+  <link type="Image/x-icon" href="../assets/sun_3.png" rel="icon">
+  <title>laba3</title>
+</head>
+
+<body>
+  <main>
+    <div class="cv">
+      <h1 class="cv__heading">Резюме</h1>
+      <form action="" class="cv__form" method="post">
+        <div class="cv__form__input_name">
+          <label for="name" class="input_label">Введите имя</label>
+          <input type="text" id="name" class="input_field">
+        </div>
+        <div class="cv__form__input_surname">
+          <label for="surname" class="input_label">Введите фамилию</label>
+          <input type="text" id="surname" class="input_field">
+        </div>
+        <div class="cv__form__input_phone">
+          <label for="phone" class="input_label">Введите телефон</label>
+          <input type="tel" id="phone" class="input_field">
+        </div>
+        <div class="cv__form__input_email">
+          <label for="email" class="input_label">Введите эл. почту</label>
+          <input type="email" id="email" class="input_field">
+        </div>
+
+        <fieldset class="cv__form__choose_gender">
+          <legend class="choose_gender__legend">Выберите свой пол</legend>
+          <div class="choose_gender__male">
+            <input type="radio" id="male" name="gender" class="radio_button">
+            <label for="male" class="input_label">Мужской</label><br />
+          </div>
+          <div class="choose_gender__female">
+            <input type="radio" id="female" name="gender" class="radio_button">
+            <label for="female" class="input_label">Женский</label><br />
+          </div>
+          <div class="choose_gender__dont_say">
+            <input type="radio" id="dont_say" name="gender" class="radio_button">
+            <label for="dont_say" class="input_label">Не определен</label><br />
+          </div>
+
+        </fieldset>
+
+        <select id="direction" class="select_direction">
+          <option>Выберите желаемое направление</option>
+          <option>Frontend development</option>
+          <option>Backend development</option>
+          <option>FullStack development</option>
+        </select>
+
+        <fieldset class="cv__form__choose_gender">
+          <legend class="choose_gender__legend">Выберите свои навыки</legend>
+          <div class="choose_skill__male">
+            <input type="checkbox" id="html" name="skill" class="radio_button">
+            <label for="html" class="input_label">HTML</label><br />
+          </div>
+          <div class="choose_skill__female">
+            <input type="checkbox" id="css" name="skill" class="radio_button">
+            <label for="css" class="input_label">CSS</label><br />
+          </div>
+          <div class="choose_skill__java_script">
+            <input type="checkbox" id="java_script" name="skill" class="radio_button">
+            <label for="java_script" class="input_label">Java Script</label><br />
+          </div>
+
+        </fieldset>
+
+        <textarea rows="5" cols="10">Расскажите о себе</textarea>
+        
+        <input type="file" class="cv__form__input_file">
+
+        <div class="cv__form__password__container">
+          <label for="password" class="input_label">Придумайте пароль</label>
+          <input type="password" class="input_field" id="password">
+        </div>
+
+        
+
+        <div class="cv__form__button__container">
+          <input type="reset" value="Сбросить" class="cv__form__button cv__form__button_reset">
+          <input type="submit" class="cv__form__button_submit cv__form__button">
+        </div>
+      </form>
+    </div>
+  </main>
+</body>
+
+</html>
