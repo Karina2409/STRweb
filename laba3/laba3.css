@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+}
+
+main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+
+.cv {
+  background-color: rgb(138, 255, 255);
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  border-radius: 30px;
+  width: 500px;
+  row-gap: 20px;
+  height: 800px;
+}
+
+.cv__heading {
+  margin: 0;
+  text-align: center;
+}
+
+.cv__form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+.input_label {
+  font-size: 20px;
+  display: inline-block;
+  width: 47%;
+}
+
+.input_field {
+  width: 50%;
+  height: 25px;
+  background-color: antiquewhite;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.cv__form__choose_gender {
+  background-color: antiquewhite;
+  border-color: rgb(248, 219, 181);
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.choose_gender__legend {
+  background-color: rgb(248, 219, 181);
+  font-size: 20px;
+  padding: 5px;
+}
+
+.radio_button {
+  margin: 0;
+}
+
+.select_direction {
+  height: 40px;
+  border: none;
+  background-color: antiquewhite;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+.cv__form__input_file {
+  font-size: 16px;
+}
+
+.cv__form__button__container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 10px;
+}
+
+.cv__form__button{
+  width: 100px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+}
+
+.cv__form__button_submit{
+  background-color: rgb(51, 254, 187);
+}
+
+.cv__form__button_reset{
+  background-color:rgb(255, 145, 167);
+}
