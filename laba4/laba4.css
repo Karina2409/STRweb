@@ -1,0 +1,144 @@
+html {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  background: rgb(52, 206, 142);
+  height: 100px;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  line-height: 100px;
+  margin: 0;
+}
+
+button {
+  position: absolute;
+  margin: 50px;
+  font-size: 20px;
+  background-color: red;
+  cursor: pointer;
+  animation: button-move linear 0.1s infinite;
+}
+
+button:hover {
+  animation-play-state: paused;
+  background-color: green;
+  color: white;
+}
+
+a {
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+  display: block;
+  width: 245px;
+  margin-left: 300px;
+  margin-top: 50px;
+  position: absolute;
+}
+
+a:hover {
+  color: green;
+}
+
+a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: green;
+  left: 50%;
+  bottom: 0;
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+a:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+@keyframes button-move {
+  0% {
+    margin-left: 50px;
+  }
+
+  50% {
+    margin-left: 52px;
+  }
+
+  100% {
+    margin-left: 50px;
+  }
+}
+
+@keyframes text-decorated {
+  0% {}
+}
+
+.ball {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  border-radius: 50%;
+  position: relative;
+  animation: ball-move 3s ease-in;
+  animation-fill-mode: forwards;
+}
+
+@keyframes ball-move {
+  0% {
+    transform: translateY(0);
+  }
+
+  5% {
+    transform: translateY(20vh);
+  }
+
+  10% {
+    transform: translateY(45vh);
+  }
+
+  15% {
+    transform: translateY(65vh);
+  }
+
+  20% {
+    transform: translateY(80vh);
+  }
+
+  30% {
+    transform: translateY(80vh) scaleY(0.7);
+  }
+
+  50% {
+    transform: translateY(20vh) scaleY(1);
+  }
+
+  60% {
+    transform: translateY(80vh) scaleY(0.8);
+  }
+
+  70% {
+    transform: translateY(40vh) scaleY(1);
+  }
+
+  80% {
+    transform: translateY(80vh) scaleY(0.9);
+  }
+
+  90% {
+    transform: translateY(60vh) scaleY(1);
+  }
+
+  100% {
+    transform: translateY(80vh) scaleY(1);
+  }
+}
+
