@@ -1,0 +1,74 @@
+body {
+  padding: 15px;
+}
+
+h2 {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+  display: inline-block;
+}
+
+.style__buttons {
+  display: flex;
+}
+
+.style__button {
+  border: 2px solid #4fc3f7;
+  background-color: white;
+  text-transform: uppercase;
+  font-family: 'Button font';
+  font-size: 14px;
+  padding: 10px;
+  margin-right: 5px;
+}
+
+#style_grid_areas {
+  display: grid;
+  grid-template-areas:
+    "a a a"
+    "b c c"
+    "b c c";
+}
+
+#style_justify{
+  display: grid;
+  justify-items: start;
+}
+
+.style__button:hover {
+  background-color: #cdecfa;
+  cursor: pointer;
+}
+
+.style__button.active {
+  background-color: #4fc3f7;
+}
+
+.style__example {
+  border: 2px solid #4fc3f7;
+}
+
+.style__example__numbers {
+  border: 1px dotted #a6a6a6;
+  display: grid;
+  grid-template: 50px 50px 50px / 50px 50px 50px;
+}
+
+.style__example__number {
+  background-color: #9bd8f5;
+  border: 1px solid white;
+  padding: .5rem;
+  font-size: 30px;
+  color: #237397;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Button font";
+  src: url("../laba2/font/ofont.ru_Arkhip.ttf");
+}
