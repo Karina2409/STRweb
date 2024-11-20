@@ -1,0 +1,65 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgb(254, 240, 216);
+  width: 1440px;
+  margin: 0 auto;
+}
+
+.head__link{
+  color: black;
+  text-decoration: none;
+}
+
+.head__list{
+  list-style-type: none;
+  padding-left: 0;
+}
+
+img {
+  height: 300px;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.nachalo__description{
+  text-align: center;
+  font-family: 'MV-crooker';
+}
+
+.klaustrofobi__description{
+  text-align: right;
+  font-family: 'Ramona';
+}
+
+.divergent__description{
+  text-align: justify;
+  font-family: 'Arkhip';
+}
+
+.karina{
+  font-family: "Karina font";
+}
+
+
+@font-face {
+  font-family: "Ramona";
+  src: url("./font/ofont.ru_Ramona.ttf");
+}
+
+@font-face {
+  font-family: "MV-crooker";
+  src: url("./font/ofont.ru_MV-crooker.ttf")
+}
+
+@font-face {
+  font-family: "Arkhip";
+  src: url("./font/ofont.ru_Arkhip.ttf");
+}
+
+@font-face {
+  font-family: "Karina font";
+  src: url("./font/Karinafont1.ttf");
+}
